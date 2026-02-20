@@ -52,5 +52,15 @@
   <!-- Main JS -->
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
+  <!-- Scroll-aware header -->
+  <script>
+    (function () {
+      var h = document.getElementById('header');
+      window.addEventListener('scroll', function () {
+        h.classList.toggle('scrolled', window.scrollY > 60);
+      }, { passive: true });
+    })();
+  </script>
+
 </body>
 </html>
