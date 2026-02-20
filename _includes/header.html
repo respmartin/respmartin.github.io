@@ -1,0 +1,101 @@
+<header id="header" class="fixed top-0 left-0 right-0 z-50" style="height:70px">
+  <div id="headerInner" class="h-full transition-all duration-300 border-b border-transparent">
+    <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="/index.html"
+         class="font-extrabold text-lg tracking-tight text-gray-900 hover:text-gray-700 no-underline transition-colors">
+        {{ site.author.display_name }}
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        <a class="nav-link {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}"
+           href="/index.html">Home</a>
+        <a class="nav-link {% if page.url contains 'about' %}active{% endif %}"
+           href="/about.html">About</a>
+        <a class="nav-link {% if page.url contains 'resume' %}active{% endif %}"
+           href="/resume.html">Resume</a>
+        <a class="nav-link {% if page.url contains 'publications' %}active{% endif %}"
+           href="/publications.html">Publications</a>
+      </nav>
+
+      <!-- Social links + mobile toggle -->
+      <div class="flex items-center gap-3">
+        <a href="{{ site.author.linkedin }}"
+           class="text-gray-400 hover:text-[#6B3FA0] transition-colors"
+           target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="bi bi-linkedin text-lg"></i>
+        </a>
+        <a href="{{ site.author.instagram }}"
+           class="text-gray-400 hover:text-[#F1BE48] transition-colors"
+           target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="bi bi-instagram text-lg"></i>
+        </a>
+        <button id="menuBtn"
+                class="md:hidden ml-1 p-2 text-gray-600 hover:text-gray-900 transition-colors"
+                aria-label="Open menu" aria-expanded="false">
+          <i class="bi bi-list text-2xl"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav overlay -->
+<div id="navbar-mobile" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <button id="closeNav"
+          class="absolute top-6 right-6 p-2 text-gray-500 hover:text-gray-900 transition-colors"
+          aria-label="Close menu">
+    <i class="bi bi-x-lg text-2xl"></i>
+  </button>
+
+  <a href="/index.html"
+     class="{% if page.url == '/' or page.url == '/index.html' %}!text-[#F1BE48]{% endif %}">
+    Home
+  </a>
+  <a href="/about.html"
+     class="{% if page.url contains 'about' %}!text-[#F1BE48]{% endif %}">
+    About
+  </a>
+  <a href="/resume.html"
+     class="{% if page.url contains 'resume' %}!text-[#F1BE48]{% endif %}">
+    Resume
+  </a>
+  <a href="/publications.html"
+     class="{% if page.url contains 'publications' %}!text-[#F1BE48]{% endif %}">
+    Publications
+  </a>
+
+  <div class="flex items-center gap-5 mt-4">
+    <a href="{{ site.author.linkedin }}" class="text-gray-400 hover:text-[#6B3FA0]"
+       target="_blank" rel="noopener" aria-label="LinkedIn">
+      <i class="bi bi-linkedin text-xl"></i>
+    </a>
+    <a href="{{ site.author.instagram }}" class="text-gray-400 hover:text-[#F1BE48]"
+       target="_blank" rel="noopener" aria-label="Instagram">
+      <i class="bi bi-instagram text-xl"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Scroll-aware header glass effect -->
+<script>
+  (function () {
+    var inner = document.getElementById('headerInner');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) {
+        inner.style.background       = 'rgba(250,250,247,0.92)';
+        inner.style.backdropFilter   = 'blur(14px)';
+        inner.style.borderBottomColor = 'rgba(0,0,0,0.07)';
+        inner.style.boxShadow        = '0 1px 20px rgba(0,0,0,0.06)';
+      } else {
+        inner.style.background        = 'transparent';
+        inner.style.backdropFilter    = 'none';
+        inner.style.borderBottomColor = 'transparent';
+        inner.style.boxShadow         = 'none';
+      }
+    }, { passive: true });
+  })();
+</script>
