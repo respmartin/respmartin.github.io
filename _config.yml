@@ -1,0 +1,21 @@
+title: "Rebecca Espigares Martin"
+description: "Sr. Staff Verification Engineer — Synopsys Inc. Building the infrastructure that makes complex engineering software trustworthy."
+url: "https://remartin.me"
+baseurl: ""
+
+author:
+  name: "Rebecca Espigares Martin"
+  display_name: "Rebecca"
+  email: "info@remartin.me"
+  linkedin: "https://www.linkedin.com/in/respm"
+  instagram: "https://www.instagram.com/beccaespm/"
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Readme.txt
+  - LICENSE

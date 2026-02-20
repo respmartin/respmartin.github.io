@@ -1,0 +1,36 @@
+<header id="header" class="fixed-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <h1 class="logo me-auto me-lg-0">
+      <a href="{{ '/' | relative_url }}">{{ site.author.display_name }}</a>
+    </h1>
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li>
+          <a class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}"
+             href="{{ '/' | relative_url }}">Home</a>
+        </li>
+        <li>
+          <a class="{% if page.url contains 'about' %}active{% endif %}"
+             href="{{ '/about.html' | relative_url }}">About</a>
+        </li>
+        <li>
+          <a class="{% if page.url contains 'resume' %}active{% endif %}"
+             href="{{ '/resume.html' | relative_url }}">Resume</a>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <div class="header-social-links">
+      <a href="{{ site.author.linkedin }}" class="linkedin" target="_blank" rel="noopener">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="{{ site.author.instagram }}" class="instagram" target="_blank" rel="noopener">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+
+  </div>
+</header>

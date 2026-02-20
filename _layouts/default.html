@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{{ page.title }} — {{ site.author.name }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Favicons -->
+  <link href="{{ '/assets/img/favicon.png' | relative_url }}" rel="icon">
+  <link href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ '/assets/vendor/aos/aos.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/vendor/bootstrap/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/vendor/bootstrap-icons/bootstrap-icons.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/vendor/boxicons/css/boxicons.min.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/vendor/glightbox/css/glightbox.min.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/vendor/swiper/swiper-bundle.min.css' | relative_url }}" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+</head>
+
+<body>
+
+  {% include header.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ '/assets/vendor/purecounter/purecounter_vanilla.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/aos/aos.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/glightbox/js/glightbox.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/isotope-layout/isotope.pkgd.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/swiper/swiper-bundle.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/waypoints/noframework.waypoints.js' | relative_url }}"></script>
+
+  <!-- Main JS -->
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+</body>
+</html>
