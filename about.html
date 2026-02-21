@@ -4,278 +4,396 @@ title: About
 description: "About Rebecca Espigares Martin — Sr. Staff Verification Engineer at Synopsys, SF Bay Area."
 ---
 
-<main id="main">
+<main id="main" class="pt-[70px]">
 
-  <!-- ======= About ======= -->
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
+  <!-- ── About ─────────────────────────────────────────────── -->
+  <section class="section-pad mesh-bg">
+    <div class="max-w-7xl mx-auto">
 
-      <div class="section-title">
-        <span class="section-label">// Who I am</span>
-        <h2>About</h2>
+      <div class="reveal mb-12">
+        <span class="section-label block mb-3">// Who I am</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">About</h2>
+        <div class="gold-divider"></div>
       </div>
 
-      <div class="row align-items-center">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <img src="/assets/img/about.jpg" class="img-fluid" alt="Rebecca Espigares Martin">
-        </div>
-        <div class="col-lg-8 content">
+      <div class="flex flex-col lg:flex-row gap-10 items-start reveal reveal-delay-1">
 
-          <p>I grew up in Granada, in the south of Spain &mdash; a city of medieval palaces, flamenco echoing off stone walls, and Real Madrid on TV every weekend. From an early age I was fascinated by how systems work: radio signals, antennas, the invisible architecture beneath modern communication. That curiosity carried me through a BS and MS in Telecommunications Engineering at the Universidad de Granada, and then &mdash; after winning the <strong>La Caixa Fellowship</strong>, one of Spain&rsquo;s most prestigious academic grants &mdash; across the Atlantic to UC San Diego for a second MS in Electrical and Computer Engineering.</p>
-
-          <p>I have spent 15+ years building and verifying the scientific software that engineers trust when lives and missions are on the line. At Delcross Technologies I helped develop Savant, the engine behind HFSS SBR+. At Ansys I grew from engineer to technical leader, owning the end-to-end verification strategy for one of the world&rsquo;s most complex physics simulators. In 2025 I joined <strong>Synopsys</strong> as a <strong>Sr. Staff Engineer in Verification Engineering</strong> &mdash; the largest EDA company on the planet, and a whole new set of hard problems to solve.</p>
-
-          <p>I have called the San Francisco Bay Area home since 2017. Outside the terminal I play guitar, run trails, cook dishes from wherever the world is calling me, and read anything I can get my hands on. I still catch every Real Madrid match I can &mdash; some things never change.</p>
-
-          <div class="info">
-            <div class="email">
-              <i class="bi bi-envelope"></i>
-              <h4>Email</h4>
-              <p><a href="mailto:info@remartin.me">info@remartin.me</a></p>
-            </div>
+        <!-- Photo -->
+        <div class="w-full lg:w-72 shrink-0">
+          <div class="glass p-2 inline-block">
+            <img src="/assets/img/about.jpg"
+                 class="w-full rounded-xl object-cover"
+                 style="max-height:320px;object-position:top;"
+                 alt="Rebecca Espigares Martin">
           </div>
-
+          <!-- Contact chip -->
+          <div class="glass-sm p-4 mt-4 flex items-center gap-3">
+            <i class="bi bi-envelope text-[#6B3FA0] text-lg shrink-0"></i>
+            <a href="mailto:info@remartin.me"
+               class="text-sm font-medium text-gray-700 hover:text-gray-900 break-all">
+              info@remartin.me
+            </a>
+          </div>
+          <div class="glass-sm p-4 mt-3 flex items-center gap-3">
+            <i class="bi bi-geo-alt text-[#F1BE48] text-lg shrink-0"></i>
+            <span class="text-sm font-medium text-gray-700">Berkeley, CA</span>
+          </div>
         </div>
-      </div>
 
+        <!-- Bio -->
+        <div class="flex-1 space-y-5 text-gray-600 leading-relaxed text-[1.05rem]">
+          <p>
+            I grew up in Granada, in the south of Spain &mdash; a city of medieval palaces,
+            flamenco echoing off stone walls, and Real Madrid on TV every weekend. From an early
+            age I was fascinated by how systems work: radio signals, antennas, the invisible
+            architecture beneath modern communication. That curiosity carried me through a BS and
+            MS in Telecommunications Engineering at the Universidad de Granada, and then &mdash;
+            after winning the <strong class="text-gray-900">La Caixa Fellowship</strong>, one of
+            Spain&rsquo;s most prestigious academic grants &mdash; across the Atlantic to UC San
+            Diego for a second MS in Electrical and Computer Engineering.
+          </p>
+          <p>
+            I have spent 15+ years building and verifying the scientific software that engineers
+            trust when lives and missions are on the line. At Delcross Technologies I helped
+            develop Savant, the engine behind HFSS SBR+. At Ansys I grew from engineer to
+            technical leader, owning the end-to-end verification strategy for one of the
+            world&rsquo;s most complex physics simulators. In 2025 I joined
+            <strong class="text-gray-900">Synopsys</strong> as a
+            <strong class="text-gray-900">Sr. Staff Engineer in Verification Engineering</strong>
+            &mdash; the largest EDA company on the planet, and a whole new set of hard problems
+            to solve.
+          </p>
+          <p>
+            I have called the San Francisco Bay Area home since 2017. Outside the terminal I play
+            guitar, run trails, cook dishes from wherever the world is calling me, and read
+            anything I can get my hands on. I still catch every Real Madrid match I can &mdash;
+            some things never change.
+          </p>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- ======= Expertise ======= -->
-  <section id="expertise" class="section-bg">
-    <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
-        <span class="section-label">// What I do</span>
-        <h2>Expertise</h2>
+  <!-- ── Expertise — Bento Grid ────────────────────────────── -->
+  <section class="section-pad mesh-bg-alt">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="reveal mb-12">
+        <span class="section-label block mb-3">// What I do</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">Expertise</h2>
+        <div class="gold-divider"></div>
       </div>
 
-      <div class="row g-4">
+      <!-- Bento grid -->
+      <div class="bento-grid">
 
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="expertise-card">
-            <i class="bi bi-cpu icon"></i>
-            <h4>EDA Verification</h4>
-            <p>Large-scale verification strategy, quality standards, and regression infrastructure at Synopsys and Ansys.</p>
+        <!-- Large card: EDA Verification -->
+        <div class="bento-8 reveal">
+          <div class="glass p-8 h-full" style="border-top:3px solid #F1BE48;">
+            <div class="flex items-start gap-5">
+              <div class="shrink-0 w-14 h-14 rounded-xl flex items-center justify-center text-2xl"
+                   style="background:rgba(241,190,72,0.12);">
+                <i class="bi bi-cpu" style="color:#C8960E;"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">EDA Verification</h4>
+                <p class="text-gray-500 leading-relaxed">
+                  Large-scale verification strategy, quality standards, and regression
+                  infrastructure at Synopsys and Ansys. Owning the full quality lifecycle for
+                  physics simulation software that the aerospace, semiconductor, and defense
+                  industries depend on.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-5">
+                  <span class="pill-gold">Regression frameworks</span>
+                  <span class="pill-gold">CI pipelines</span>
+                  <span class="pill-gold">Quality standards</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="expertise-card">
-            <i class="bi bi-broadcast icon"></i>
-            <h4>EM Simulation</h4>
-            <p>Computational electromagnetics, HFSS, SBR+ ray-tracing solvers, and RF/antenna design &mdash; from theory to production code.</p>
+        <!-- Small card: EM Simulation -->
+        <div class="bento-4 reveal reveal-delay-1">
+          <div class="glass p-7 h-full" style="border-top:3px solid #6B3FA0;">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl mb-4"
+                 style="background:rgba(107,63,160,0.10);">
+              <i class="bi bi-broadcast" style="color:#6B3FA0;"></i>
+            </div>
+            <h4 class="text-lg font-bold text-gray-900 mb-2">EM Simulation</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Computational electromagnetics, HFSS, SBR+ ray-tracing solvers, and RF/antenna
+              design &mdash; from theory to production code.
+            </p>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="expertise-card">
-            <i class="bi bi-gear-wide-connected icon"></i>
-            <h4>Test Infrastructure</h4>
-            <p>Automated pipelines, CI-level regression frameworks, and cross-team quality standards that ship reliable software at scale.</p>
+        <!-- Medium card: Test Infrastructure -->
+        <div class="bento-6 reveal reveal-delay-2">
+          <div class="glass p-7 h-full" style="border-top:3px solid #F1BE48;">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl mb-4"
+                 style="background:rgba(241,190,72,0.12);">
+              <i class="bi bi-gear-wide-connected" style="color:#C8960E;"></i>
+            </div>
+            <h4 class="text-lg font-bold text-gray-900 mb-2">Test Infrastructure</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Automated pipelines, CI-level regression frameworks, and cross-team quality
+              standards that ship reliable software at scale.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="pill-gold">Python</span>
+              <span class="pill-gold">CI/CD</span>
+              <span class="pill-gold">Automation</span>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="expertise-card">
-            <i class="bi bi-gpu-card icon"></i>
-            <h4>Scientific Computing</h4>
-            <p>HPC in C++ and Fortran, parallel computing with OpenMP, MPI, and CUDA, and numerical methods for physics simulation.</p>
+        <!-- Medium card: Scientific Computing -->
+        <div class="bento-6 reveal reveal-delay-3">
+          <div class="glass p-7 h-full" style="border-top:3px solid #6B3FA0;">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl mb-4"
+                 style="background:rgba(107,63,160,0.10);">
+              <i class="bi bi-gpu-card" style="color:#6B3FA0;"></i>
+            </div>
+            <h4 class="text-lg font-bold text-gray-900 mb-2">Scientific Computing</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              HPC in C++ and Fortran, parallel computing with OpenMP, MPI, and CUDA, and
+              numerical methods for physics simulation.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="pill-royal">C++</span>
+              <span class="pill-royal">Fortran</span>
+              <span class="pill-royal">CUDA</span>
+              <span class="pill-royal">MPI</span>
+            </div>
           </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <!-- ======= Skills ======= -->
-  <section id="skills" class="skills">
-    <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
-        <span class="section-label">// Languages &amp; tools</span>
-        <h2>Skills</h2>
+  <!-- ── Skills ────────────────────────────────────────────── -->
+  <section class="section-pad mesh-bg">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="reveal mb-12">
+        <span class="section-label block mb-3">// Languages &amp; tools</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">Skills</h2>
+        <div class="gold-divider"></div>
       </div>
 
-      <div class="row skills-content">
+      <div class="reveal reveal-delay-1 grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        <div class="col-lg-6">
-          <div class="progress">
-            <span class="skill">Python <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">C / C++ <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">MATLAB <i class="val">85%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+        <!-- Languages -->
+        <div class="glass p-7">
+          <h4 class="font-bold text-gray-900 mb-5 flex items-center gap-2">
+            <i class="bi bi-code-slash text-[#F1BE48]"></i> Languages
+          </h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="pill-gold">Python</span>
+            <span class="pill-gold">C</span>
+            <span class="pill-gold">C++</span>
+            <span class="pill-gold">Fortran</span>
+            <span class="pill-gold">MATLAB</span>
+            <span class="pill-gold">Java</span>
+            <span class="pill-gold">Regex</span>
+            <span class="pill-gold">VHDL</span>
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="progress">
-            <span class="skill">Fortran <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+        <!-- Domains -->
+        <div class="glass p-7">
+          <h4 class="font-bold text-gray-900 mb-5 flex items-center gap-2">
+            <i class="bi bi-diagram-3 text-[#6B3FA0]"></i> Domains
+          </h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="pill-royal">EDA Verification</span>
+            <span class="pill-royal">EM Simulation</span>
+            <span class="pill-royal">HPC</span>
+            <span class="pill-royal">Antenna Design</span>
+            <span class="pill-royal">Micromagnetics</span>
+            <span class="pill-royal">Test Automation</span>
           </div>
-          <div class="progress">
-            <span class="skill">Regular Expressions <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">Java <i class="val">65%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="glass p-7">
+          <h4 class="font-bold text-gray-900 mb-5 flex items-center gap-2">
+            <i class="bi bi-wrench text-[#F1BE48]"></i> Tools &amp; Platforms
+          </h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="pill">HFSS</span>
+            <span class="pill">SBR+</span>
+            <span class="pill">FDTD</span>
+            <span class="pill">OpenMP</span>
+            <span class="pill">MPI</span>
+            <span class="pill">CUDA</span>
+            <span class="pill">Git</span>
+            <span class="pill">Linux</span>
           </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <!-- ======= Currently ======= -->
-  <!-- To update: just change the ci-value text. Add more currently-item divs as needed. -->
-  <section id="currently" class="currently section-bg">
-    <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
-        <span class="section-label">// Right now</span>
-        <h2>Currently</h2>
-        <p>A snapshot of what I&rsquo;m into at the moment.</p>
+  <!-- ── Currently ─────────────────────────────────────────── -->
+  <section class="section-pad mesh-bg-alt">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="reveal mb-12">
+        <span class="section-label block mb-3">// Right now</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">Currently</h2>
+        <div class="gold-divider"></div>
+        <p class="text-gray-500 mt-4">A snapshot of what I&rsquo;m into at the moment.</p>
       </div>
 
-      <div class="currently-grid">
+      <div class="currently-grid reveal reveal-delay-1">
 
-        <div class="currently-item">
-          <span class="ci-icon">📖</span>
-          <span class="ci-label">Reading</span>
-          <span class="ci-value ci-placeholder">Ask me &mdash; always mid-book</span>
+        <div class="glass-sm p-6 flex flex-col gap-2">
+          <span class="text-3xl">📖</span>
+          <span class="text-xs font-bold tracking-widest uppercase text-[#6B3FA0]">Reading</span>
+          <span class="text-sm font-medium text-gray-700">Ask me &mdash; always mid-book</span>
         </div>
 
-        <div class="currently-item">
-          <span class="ci-icon">⚙️</span>
-          <span class="ci-label">Working on</span>
-          <span class="ci-value">Verification infrastructure at Synopsys</span>
+        <div class="glass-sm p-6 flex flex-col gap-2">
+          <span class="text-3xl">⚙️</span>
+          <span class="text-xs font-bold tracking-widest uppercase text-[#6B3FA0]">Working on</span>
+          <span class="text-sm font-medium text-gray-700">Verification infrastructure at Synopsys</span>
         </div>
 
-        <div class="currently-item">
-          <span class="ci-icon">🏃</span>
-          <span class="ci-label">Running</span>
-          <span class="ci-value">Bay Area trails, always chasing a better time</span>
+        <div class="glass-sm p-6 flex flex-col gap-2">
+          <span class="text-3xl">🏃</span>
+          <span class="text-xs font-bold tracking-widest uppercase text-[#6B3FA0]">Running</span>
+          <span class="text-sm font-medium text-gray-700">Bay Area trails, always chasing a better time</span>
         </div>
 
-        <div class="currently-item">
-          <span class="ci-icon">🎸</span>
-          <span class="ci-label">Playing</span>
-          <span class="ci-value">Guitar &mdash; always learning something new</span>
+        <div class="glass-sm p-6 flex flex-col gap-2">
+          <span class="text-3xl">🎸</span>
+          <span class="text-xs font-bold tracking-widest uppercase text-[#6B3FA0]">Playing</span>
+          <span class="text-sm font-medium text-gray-700">Guitar &mdash; always learning something new</span>
         </div>
 
-        <div class="currently-item">
-          <span class="ci-icon">⚽</span>
-          <span class="ci-label">Watching</span>
-          <span class="ci-value">Real Madrid. Every match, no exceptions.</span>
+        <div class="glass-sm p-6 flex flex-col gap-2" style="border-top:2px solid rgba(241,190,72,0.5);">
+          <span class="text-3xl">⚽</span>
+          <span class="text-xs font-bold tracking-widest uppercase text-[#C8960E]">Watching</span>
+          <span class="text-sm font-medium text-gray-700">Real Madrid. Every match, no exceptions.</span>
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <!-- ======= Testimonials ======= -->
-  <section id="testimonials" class="testimonials">
-    <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
-        <span class="section-label">// What others say</span>
-        <h2>Testimonials</h2>
+  <!-- ── Testimonials ──────────────────────────────────────── -->
+  <section class="section-pad mesh-bg">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="reveal mb-12">
+        <span class="section-label block mb-3">// What others say</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">Testimonials</h2>
+        <div class="gold-divider"></div>
       </div>
 
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
+      <div class="testimonials-grid">
 
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="/assets/img/testimonials/jj-merelo.jpeg" class="testimonial-img" alt="">
-              <h3>Juan J. Merelo</h3>
-              <h4>Professor, Universidad de Granada</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                She was part of the class I gave at Telecommunications Eng. in Granada, and that year she was one of the most outstanding students; she even helped me prepare the syllabus beforehand. I have no problem endorsing her.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
+        <div class="glass p-7 reveal flex flex-col">
+          <span class="quote-mark">&ldquo;</span>
+          <p class="text-gray-600 leading-relaxed flex-1 italic">
+            She was part of the class I gave at Telecommunications Eng. in Granada, and that year
+            she was one of the most outstanding students; she even helped me prepare the syllabus
+            beforehand. I have no problem endorsing her.
+          </p>
+          <div class="flex items-center gap-4 mt-6 pt-6 border-t border-gray-100">
+            <img src="/assets/img/testimonials/jj-merelo.jpeg"
+                 class="w-12 h-12 rounded-full object-cover ring-2 ring-[#F1BE48]/40"
+                 alt="Juan J. Merelo">
+            <div>
+              <div class="font-bold text-gray-900 text-sm">Juan J. Merelo</div>
+              <div class="text-xs text-gray-500">Professor, Universidad de Granada</div>
             </div>
           </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="/assets/img/testimonials/fj-aparicio.jpeg" class="testimonial-img" alt="">
-              <h3>Fernando Jover Aparicio</h3>
-              <h4>Smart Cities Executive Advisor</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Rebecca is a very bright person. It was a pleasure to supervise someone who was not only enthusiastic but also very quick to take up new ideas. She produced work of very high quality, exceeding all the objectives set for her. I&rsquo;d be more than happy to work with her again.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="/assets/img/testimonials/j-owens.jpeg" class="testimonial-img" alt="">
-              <h3>John Owens</h3>
-              <h4>Professor, UC Davis</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                I enjoyed teaching Rebecca in two undergraduate courses, Computer Architecture and Parallel Architecture. She had an excellent academic record and was an eager and informed participant. I am confident she&rsquo;ll find success at whatever she tackles next.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="/assets/img/testimonials/c-mallet.jpeg" class="testimonial-img" alt="">
-              <h3>Colin Mallet</h3>
-              <h4>ICT for Smart Energy &amp; IoT</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Rebecca worked for my company on an assignment to the BT Mobility Research Centre. She worked hard and enthusiastically, and the customer was very pleased with her project. I wish her luck with future assignments.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="/assets/img/testimonials/a-garcia.jpeg" class="testimonial-img" alt="">
-              <h3>Antonio Garcia</h3>
-              <h4>Professor, Universidad de Granada</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Ms. Rebecca Martin distinguished herself as one of the most eminent students in her class, obtaining maximum grades and always showing a positive attitude. She opted to carry on advanced laboratory projects, cooperating with classmates in developing several digital systems and their implementation on FPGAs.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
 
+        <div class="glass p-7 reveal reveal-delay-1 flex flex-col">
+          <span class="quote-mark">&ldquo;</span>
+          <p class="text-gray-600 leading-relaxed flex-1 italic">
+            Rebecca is a very bright person. It was a pleasure to supervise someone who was not
+            only enthusiastic but also very quick to take up new ideas. She produced work of very
+            high quality, exceeding all the objectives set for her.
+          </p>
+          <div class="flex items-center gap-4 mt-6 pt-6 border-t border-gray-100">
+            <img src="/assets/img/testimonials/fj-aparicio.jpeg"
+                 class="w-12 h-12 rounded-full object-cover ring-2 ring-[#6B3FA0]/30"
+                 alt="Fernando Jover Aparicio">
+            <div>
+              <div class="font-bold text-gray-900 text-sm">Fernando Jover Aparicio</div>
+              <div class="text-xs text-gray-500">Smart Cities Executive Advisor</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass p-7 reveal reveal-delay-2 flex flex-col">
+          <span class="quote-mark">&ldquo;</span>
+          <p class="text-gray-600 leading-relaxed flex-1 italic">
+            I enjoyed teaching Rebecca in two undergraduate courses. She had an excellent academic
+            record and was an eager and informed participant. I am confident she&rsquo;ll find
+            success at whatever she tackles next.
+          </p>
+          <div class="flex items-center gap-4 mt-6 pt-6 border-t border-gray-100">
+            <img src="/assets/img/testimonials/j-owens.jpeg"
+                 class="w-12 h-12 rounded-full object-cover ring-2 ring-[#F1BE48]/40"
+                 alt="John Owens">
+            <div>
+              <div class="font-bold text-gray-900 text-sm">John Owens</div>
+              <div class="text-xs text-gray-500">Professor, UC Davis</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass p-7 reveal reveal-delay-1 flex flex-col">
+          <span class="quote-mark">&ldquo;</span>
+          <p class="text-gray-600 leading-relaxed flex-1 italic">
+            Rebecca worked for my company on an assignment to the BT Mobility Research Centre.
+            She worked hard and enthusiastically, and the customer was very pleased with her
+            project. I wish her luck with future assignments.
+          </p>
+          <div class="flex items-center gap-4 mt-6 pt-6 border-t border-gray-100">
+            <img src="/assets/img/testimonials/c-mallet.jpeg"
+                 class="w-12 h-12 rounded-full object-cover ring-2 ring-[#6B3FA0]/30"
+                 alt="Colin Mallet">
+            <div>
+              <div class="font-bold text-gray-900 text-sm">Colin Mallet</div>
+              <div class="text-xs text-gray-500">ICT for Smart Energy &amp; IoT</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass p-7 reveal reveal-delay-2 flex flex-col">
+          <span class="quote-mark">&ldquo;</span>
+          <p class="text-gray-600 leading-relaxed flex-1 italic">
+            Ms. Rebecca Martin distinguished herself as one of the most eminent students in her
+            class, obtaining maximum grades and always showing a positive attitude. She opted to
+            carry on advanced laboratory projects, cooperating with classmates in developing
+            several digital systems and their implementation on FPGAs.
+          </p>
+          <div class="flex items-center gap-4 mt-6 pt-6 border-t border-gray-100">
+            <img src="/assets/img/testimonials/a-garcia.jpeg"
+                 class="w-12 h-12 rounded-full object-cover ring-2 ring-[#F1BE48]/40"
+                 alt="Antonio Garcia">
+            <div>
+              <div class="font-bold text-gray-900 text-sm">Antonio Garcia</div>
+              <div class="text-xs text-gray-500">Professor, Universidad de Granada</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

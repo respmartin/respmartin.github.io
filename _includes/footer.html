@@ -1,10 +1,29 @@
-<footer id="footer">
-  <div class="container">
-    <div class="copyright">
-      &copy; {{ 'now' | date: "%Y" }} <strong><span>{{ site.author.name }}</span></strong>. All Rights Reserved.
-    </div>
-    <div class="credits">
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+<footer class="border-t border-gray-100 bg-white/60 backdrop-blur-sm mt-20 py-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+
+      <p class="text-sm text-gray-400">
+        &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}
+      </p>
+
+      <div class="flex items-center gap-5">
+        <a href="{{ site.author.linkedin }}"
+           class="text-gray-400 hover:text-[#6B3FA0] transition-colors"
+           target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="bi bi-linkedin text-lg"></i>
+        </a>
+        <a href="{{ site.author.instagram }}"
+           class="text-gray-400 hover:text-[#F1BE48] transition-colors"
+           target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="bi bi-instagram text-lg"></i>
+        </a>
+        <a href="mailto:{{ site.author.email }}"
+           class="text-gray-400 hover:text-gray-700 transition-colors"
+           aria-label="Email">
+          <i class="bi bi-envelope text-lg"></i>
+        </a>
+      </div>
+
     </div>
   </div>
 </footer>
