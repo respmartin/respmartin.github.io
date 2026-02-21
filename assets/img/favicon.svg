@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#F1BE48"/>
+      <stop offset="100%" stop-color="#6B3FA0"/>
+    </linearGradient>
+    <clipPath id="rr">
+      <rect width="32" height="32" rx="6.4" ry="6.4"/>
+    </clipPath>
+  </defs>
+  <!-- Background -->
+  <rect width="32" height="32" rx="6.4" ry="6.4" fill="url(#bg)"/>
+  <!-- Lettermark R -->
+  <text
+    x="16" y="23"
+    font-family="'DejaVu Sans', 'Arial', sans-serif"
+    font-weight="700"
+    font-size="20"
+    text-anchor="middle"
+    fill="white"
+    opacity="1"
+  >R</text>
+</svg>
